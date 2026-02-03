@@ -143,11 +143,6 @@ Login:
 gh auth login
 ```
 
-Crea repo dalla cartella corrente:
-```bash
-gh repo create nome-repo --public --source=. --remote=origin --push
-```
-
 > Se non vuoi installare `gh`, usa la Strada 1.
 
 ---
@@ -173,7 +168,43 @@ Verifica stato:
 ```bash
 git status
 ```
+Git non accetta repo vuote;
 
+```bash
+git add .
+git commit -m "Initial commit"
+```
+
+Crea repo dalla cartella corrente:
+```bash
+gh repo create nome-repo --public --source=. --remote=origin --push
+```
+Cosa fa esattamente (importantissimo capirlo):
+
+gh repo create python_lezioni
+→ crea una repo su GitHub con quel nome
+
+--public
+→ repo pubblica (usa --private se vuoi)
+
+--source=.
+→ usa questa cartella
+
+--remote=origin
+→ imposta automaticamente origin
+
+--push
+→ fa subito il push
+
+Aprire la Repo sul web
+```bash
+gh repo view --web
+```
+oppure su wsl
+
+```bash
+explorer.exe .
+```
 ---
 
 ## 4) `.gitignore` — come funziona DAVVERO (super importante)
