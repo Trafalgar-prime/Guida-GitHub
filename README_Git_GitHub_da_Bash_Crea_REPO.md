@@ -101,15 +101,15 @@ Con questo comando leggo se sono in SSH o in HTTP, infatti posso ottenere due ri
 ```bash
 git remote -v
 ```
-origin  https://github.com/Traflgar-prime/pyhton_lezioni.git (fetch)
-origin  https://github.com/Traflgar-prime/pyhton_lezioni.git (push)
+- origin  https://github.com/Traflgar-prime/pyhton_lezioni.git (fetch)
+- origin  https://github.com/Traflgar-prime/pyhton_lezioni.git (push)
 
 ```bash
 git remote set-url origin git@github.com:Trafalgar-prime/python_lezioni.git
 git remote -v
 ```
-origin  git@github.com:Trafalgar-prime/python_lezioni.git (fetch)
-origin  git@github.com:Trafalgar-prime/python_lezioni.git (push)
+- origin  git@github.com:Trafalgar-prime/python_lezioni.git (fetch)
+- origin  git@github.com:Trafalgar-prime/python_lezioni.git (push)
 
 Nel primo caso inizia con HTTP mentre il secondo legge il codice SSH, per aggiornarlo ho usato il codice nel mezzo
 
@@ -131,6 +131,7 @@ Poi GitHub ti dà un URL:
 
 ### Strada 2 (da terminale): GitHub CLI (`gh`)
 Se vuoi farlo totalmente da bash, puoi usare `gh` (GitHub CLI).
+Praticamente devo usare per forza gh.
 
 Installa:
 ```bash
